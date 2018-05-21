@@ -15,6 +15,7 @@ $(document).ready(function(){
 
 $("p").on('click', getIt);
 $("input").on('keypress', function(){
+  console.log(event.keCode);
   if (event.keyCode == 71){
     pressIt();
   }

@@ -7,7 +7,6 @@ function frameIt() {
 }
 function pressIt() {
   $("input").on('keydown', function (key){
-  console.log(key.which);
   if (key.which == 71){
   alert('G was pushed');
   }

@@ -6,7 +6,7 @@ function frameIt() {
   $('img').addClass("tasty");
 }
 function pressIt() {
-  var g = 71;
+  
   if (g == 71){
   alert('G was pushed');
   g = 0;

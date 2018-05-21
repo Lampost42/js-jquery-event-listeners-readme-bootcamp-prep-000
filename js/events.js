@@ -6,7 +6,9 @@ function frameIt() {
   $('img').addClass("tasty");
 }
 function pressIt() {
+  if (key.keyCode == 71){
   alert('G was pushed');
+  }
 }
 function submitIt() {
   alert("Your form is going to be submitted now.");

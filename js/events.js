@@ -6,7 +6,7 @@ function frameIt() {
   $('img').addClass("tasty");
 }
 function pressIt(key) {
-  $("input").on('keydown', function(key){
+  $("input").on('keypress', function(key){
   if (key.keyCode == 71){
   alert('G was pushed');
   }

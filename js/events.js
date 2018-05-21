@@ -5,7 +5,7 @@ function getIt(){
 function frameIt() {
   $('img').addClass("tasty");
 }
-function pressIt(event) {
+function pressIt() {
   alert('G was pushed');
 }
 function submitIt() {

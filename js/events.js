@@ -14,7 +14,6 @@ function submitIt() {
   alert("Your form is going to be submitted now.");
 }
 $(document).ready(function(){
-var g = 0;
 $("p").on('click', getIt);
 $("input").on('keydown', function(key){
   if (key.keyDown == 71){

@@ -16,7 +16,7 @@ $(document).ready(function(){
 $("p").on('click', getIt);
 $("input").on('keydown', function(key){
   console.log(key.keyCode);
-  if (key.keyCode == 103 || key.keyCode == 71){
+  if (key.keyCode == 71){
     pressIt();
   }
 });

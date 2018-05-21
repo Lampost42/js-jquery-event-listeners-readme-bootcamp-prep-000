@@ -6,7 +6,10 @@ function frameIt() {
   $('img').addClass("tasty");
 }
 function pressIt() {
+  if (key.keyCode == 71){
+    pressIt();
   alert('G was pushed');
+  }
 }
 function submitIt() {
   alert("Your form is going to be submitted now.");
@@ -14,12 +17,7 @@ function submitIt() {
 $(document).ready(function(){
 
 $("p").on('click', getIt);
-$("input").on('keypress', function(key){
-  console.log(key.keyCode);
-  if (key.keyCode == 71){
-    pressIt();
-  }
-});
+$("input").on('keypress', pressit);
 $('img').on('load', frameIt);
 $('form').on('submit', submitIt);
 });

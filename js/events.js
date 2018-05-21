@@ -17,8 +17,7 @@ function submitIt() {
 }
 $(document).ready(function(){
 $("p").on('click', getIt);
-$("input").on('keydown',pressIt}
-});
+$("input").on('keydown',pressIt);
 $('img').on('load', frameIt);
 $('form').on('submit', submitIt);
 });

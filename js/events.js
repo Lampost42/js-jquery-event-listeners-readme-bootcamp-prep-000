@@ -6,11 +6,12 @@ function frameIt() {
   $('img').addClass("tasty");
 }
 function pressIt() {
-  
-  if (g == 71){
+  $("input").on('keydown', function (key){
+  console.log(key.which);
+  if (key.which == 71){
   alert('G was pushed');
-  g = 0;
   }
+  });
 }
 function submitIt() {
   alert("Your form is going to be submitted now.");

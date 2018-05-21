@@ -5,9 +5,11 @@ function getIt(){
 function frameIt() {
   $('img').addClass("tasty");
 }
-function pressIt(key) {
+function pressIt() {
+  var g = 71;
   if (g == 71){
   alert('G was pushed');
+  g = 0;
   }
 }
 function submitIt() {
@@ -15,11 +17,7 @@ function submitIt() {
 }
 $(document).ready(function(){
 $("p").on('click', getIt);
-$("input").on('keydown', function(key){
-  if (key.keyDown == 71){
-    g = 71;
-    pressIt();
-  }
+$("input").on('keydown',pressIt}
 });
 $('img').on('load', frameIt);
 $('form').on('submit', submitIt);

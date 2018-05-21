@@ -19,7 +19,8 @@ $("p").on('click', getIt);
 $("input").on('keydown', function(key){
   console.log(key.keyCode);
   if (key.keyCode == 71){
-    pressIt(key);
+    var test = key.keycode;
+    pressIt(test);
   }
 });
 $('img').on('load', frameIt);
